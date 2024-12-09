@@ -1,0 +1,232 @@
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+html {
+  background-color: #f4f9fc;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+#homeSection {
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+}
+
+.icon {
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.nav > li > a {
+  cursor: pointer;
+  color: black;
+}
+
+.introduce {
+  font-family: "SUITE-Regular";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 50px;
+}
+
+.hashTag {
+  font-size: 20px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.detailIntroduce {
+  font-size: 18px;
+}
+
+.profileBox {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.profileImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.contactBtn {
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #f4f9fc, #66bfe6);
+  color: white;
+  margin-top: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: gainsboro;
+}
+
+.contactInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 20px;
+  color: gray;
+}
+
+#careerSection {
+  height: 700px;
+  padding: 0 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#careerContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.careerBox {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skillSection {
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 200px;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#skillContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.skillBox {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillBox > img {
+  width: 60px;
+  height: 60px;
+}
+
+.skillDescription {
+  font-size: 13px;
+}
+
+.careerCircle > img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.careerCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.careerMainText {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.careerSubText {
+  font-size: 20px;
+  color: gray;
+}
+
+@media screen and (max-width: 1150px) {
+  #skillContainer {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
